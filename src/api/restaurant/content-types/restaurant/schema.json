@@ -4,7 +4,8 @@
   "info": {
     "singularName": "restaurant",
     "pluralName": "restaurants",
-    "displayName": "Restaurant"
+    "displayName": "Restaurant",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,13 +18,13 @@
       "unique": true
     },
     "Description": {
-      "type": "blocks"
+      "type": "text"
     },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "mappedBy": "restaurants"
+    "year": {
+      "type": "date"
+    },
+    "active": {
+      "type": "boolean"
     }
   }
 }
